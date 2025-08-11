@@ -1,0 +1,113 @@
+/* General body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; /* Light neutral background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Remove default padding/margin from all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Logo styling */
+.logo-container {
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 10px;
+    text-align: left; /* Push logo to the left */
+}
+
+.logo-container img {
+    height: 40px;
+}
+
+/* Header styling */
+hr {
+    background: linear-gradient(90deg, #8e2de2, #ff5edf); /* Colorful gradient */
+    padding: 20px 0; /* Slimmer padding */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Alternating section background colors */
+section:nth-child(odd) {
+    background-color: #ffffff; /* White */
+}
+
+section:nth-child(even) {
+    background-color: #f2f7ff; /* Light blue tint */
+}
+
+section h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00337a;
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+}
